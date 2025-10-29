@@ -1,4 +1,8 @@
 {
+  "name": "article-hub",
+  "version": "0.1.0",
+  "description": "Qiita/Zennの記事を保存し、自動で投稿するリポジトリ",
+  "private": true,
   "dependencies": {
     "@textlint-ja/textlint-rule-preset-ai-writing": "^1.6.1",
     "markdownlint-cli2": "^0.18.1",
