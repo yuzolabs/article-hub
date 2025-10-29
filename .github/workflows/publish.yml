@@ -1,0 +1,32 @@
+name: Publish articles
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'articles/**/*.md'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish_articles:
+    runs-on: ubuntu-slim
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync to Qiita
+        uses: C-Naoki/zenn-qiita-sync@0f9b91eb3b90b1b4d6afd094fdb39d9601a82ca7 # v1.0.0
+        with:
+          qiita-token: ${{ secrets.QIITA_TOKEN }}
+          convert-commit-message: "🔄 auto: synchronize qiita articles"
+          qiitacli-commit-message: "🔄 auto: update using qiita-cli"
