@@ -71,7 +71,7 @@ npx zenn preview
 
 ### 必要な環境
 
-- Node.js 22.0.0以上
+- Node.js 18.0.0以上
 - Python 3.x（pre-commit用）
 
 ### pre-commitの導入
