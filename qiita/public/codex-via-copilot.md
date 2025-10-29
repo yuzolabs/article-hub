@@ -1,15 +1,15 @@
 ---
 title: GitHub Copilot Pro+でCodexが使えるようになったので試してみた
-published_at: '2025-10-30 07:00'
-private: false
 tags:
-  - githubcopilot
-  - vscode
+  - VSCode
   - codex
-updated_at: '2025-10-29T18:48:33.094Z'
-id: null
+  - githubcopilot
+private: false
+updated_at: '2025-10-30T03:48:48+09:00'
+id: 4c12e43fe24307ac5d64
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 
 ## 三行要約
