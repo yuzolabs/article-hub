@@ -10,7 +10,23 @@
 
 ## For Markdown
 
-- After writing Markdown files, use textlint MCP.
+Only run these processes when manually editing files to prevent loops.
+
+- After writing Markdown files, use textlint.
+
+```bash
+npx textlint "<markdown-file-path>"
+```
+
+If any issues are pointed out, make the necessary corrections.
+After completing the fixes, run textlint again and repeat this process until all errors are resolved or further correction becomes difficult.
+If fixing the remaining issues becomes difficult, report it to the user.
+
+- After writing Markdown files, use markdownlint-cli2.
+
+```bash
+npx markdownlint-cli2 --fix "<markdown-file-path>"
+```
 
 ## Article Structure
 
