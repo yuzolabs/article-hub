@@ -22,7 +22,7 @@ https://x.com/github/status/1983205334756839605
 
 第一弾として、VS Code InsidersからCodexが使用できるようになっています。
 
-本記事では、実際にGitHub Copilot Pro+でCodexを試してみた内容をまとめます。
+本記事では、実際にGitHub Copilot Pro+でCodexを試してみた感想をまとめます。
 
 ## 前提条件
 
