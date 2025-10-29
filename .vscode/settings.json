@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
-        "textlint"
+        "textlint",
+        "markdownlint"
     ],
     "chat.tools.terminal.autoApprove": {
         "npx textlint": true,
