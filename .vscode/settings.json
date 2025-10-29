@@ -3,7 +3,8 @@
         "textlint",
         "markdownlint",
         "pre-commit",
-        "publish"
+        "publish",
+        "articles"
     ],
     "chat.tools.terminal.autoApprove": {
         "npx textlint": true,
