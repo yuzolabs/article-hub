@@ -1,8 +1,11 @@
 # プルリクエストテンプレート
 
-このPRに含まれるファイルを参照し、以下のテンプレートに当てはめてプルリクエストを作成すること。
+**Think in English and output in Japanese.**
+Refer to the files included in this PR and create a pull request following the template below.
+The first line should contain the pull request title.
 
 ```markdown
+<!-- PRのタイトル -->
 ## 概要
 <!-- PRの背景・目的・概要 -->
 
