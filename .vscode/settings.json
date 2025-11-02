@@ -9,5 +9,15 @@
     "chat.tools.terminal.autoApprove": {
         "npx textlint": true,
         "npx markdownlint-cli2 --fix": true
-    }
+    },
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+        {
+            "file": ".github/copilot-commit-message-instructions.md"
+        }
+    ],
+    "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
+        {
+            "file": ".github/copilot-pull-request-instructions.md"
+        }
+    ]
 }
