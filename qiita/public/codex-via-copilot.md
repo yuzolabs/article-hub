@@ -49,16 +49,16 @@ https://x.com/github/status/1983205334756839605
 
 拡張機能の画面にログイン画面が表示されるので、「Sign in with GitHub Copilot」を選択します。
 
-![ログイン画面](/images/2025/10/github-copilot-proplus/codex_login.png)
+![ログイン画面](https://raw.githubusercontent.com/yuzolabs/article-hub/main/images/2025/10/github-copilot-proplus/codex_login.png)
 
 使用するにあたり、注意事項が表示されます。
 特に、CodexとGitHubの両方の利用規約に同意する必要があることに注意してください（企業ライセンスで使用できないので問題ないとは思いますが……）。
 
-![注意事項](/images/2025/10/github-copilot-proplus/codex_notification.png)
+![注意事項](https://raw.githubusercontent.com/yuzolabs/article-hub/main/images/2025/10/github-copilot-proplus/codex_notification.png)
 
 この手順を終えるとCodexが使用可能になります。
 
-![セットアップ完了](/images/2025/10/github-copilot-proplus/codex_only_medium.png)
+![セットアップ完了](https://raw.githubusercontent.com/yuzolabs/article-hub/main/images/2025/10/github-copilot-proplus/codex_only_medium.png)
 
 ## 実際に使ってみた感想
 
