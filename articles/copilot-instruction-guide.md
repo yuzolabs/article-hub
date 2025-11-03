@@ -160,7 +160,7 @@ model: Claude Sonnet 4.5
 
 GitHub Copilotではサイドバーの「ソース管理」→「コミットメッセージの生成」から自動でコミットメッセージを生成できます。
 
-![コミットメッセージの生成](/images/2025/10/copilot-instruction-guide/commit-message.png)
+![コミットメッセージの生成](/images/2025/11/copilot-instruction-guide/commit-message.png)
 
 この時使用されるカスタム指示の設定方法としては2つあります。
 
