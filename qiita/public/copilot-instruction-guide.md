@@ -164,7 +164,7 @@ model: Claude Sonnet 4.5
 
 GitHub Copilotではサイドバーの「ソース管理」→「コミットメッセージの生成」から自動でコミットメッセージを生成できます。
 
-![コミットメッセージの生成](/images/2025/11/copilot-instruction-guide/commit-message.png)
+![コミットメッセージの生成](https://raw.githubusercontent.com/yuzolabs/article-hub/main/images/2025/11/copilot-instruction-guide/commit-message.png)
 
 この時使用されるカスタム指示の設定方法としては2つあります。
 
@@ -263,7 +263,6 @@ PRメッセージ生成用のカスタム指示も、コミットメッセージ
 ```
 
 <details><summary>インラインレビュー機能について（非推奨）</summary>
-
 
 GitHub Copilotには`github.copilot.chat.reviewSelection.instructions`という設定が存在します。
 この設定を使用すると、コードを選択した際のインラインレビュー機能にカスタム指示を追加できます。
