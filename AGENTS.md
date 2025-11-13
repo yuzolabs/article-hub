@@ -15,7 +15,7 @@ Only run these processes when manually editing files to prevent loops.
 - After writing Markdown files, use textlint.
 
 ```bash
-npx textlint "<markdown-file-path>"
+pnpm exec textlint "<markdown-file-path>"
 ```
 
 If any issues are pointed out, make the necessary corrections.
@@ -25,7 +25,7 @@ If fixing the remaining issues becomes difficult, report it to the user.
 - After writing Markdown files, use markdownlint-cli2.
 
 ```bash
-npx markdownlint-cli2 --fix "<markdown-file-path>"
+pnpm exec markdownlint-cli2 --fix "<markdown-file-path>"
 ```
 
 ## Article Structure

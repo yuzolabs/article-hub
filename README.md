@@ -26,10 +26,10 @@ Qiita/Zennの記事を保存し、自動で投稿するリポジトリです。
 
 #### 新しい記事を作成する
 
-記事はZenn形式で記述します。
+記事はZenn形式で記述します。事前にpnpmをインストールしてください。
 
 ```bash
-npx zenn new:article --slug 記事のスラッグ --title タイトル --type tech --emoji ✨
+pnpm exec zenn new:article --slug 記事のスラッグ --title タイトル --type tech --emoji ✨
 ```
 
 オプション：
@@ -42,7 +42,7 @@ npx zenn new:article --slug 記事のスラッグ --title タイトル --type te
 #### 記事をプレビューする
 
 ```bash
-npx zenn preview
+pnpm exec zenn preview
 ```
 
 [http://localhost:8000](http://localhost:8000) でプレビューを確認できます。
@@ -118,8 +118,8 @@ pre-commit run --all-files
 
 ```bash
 # textlintの実行
-npx textlint "path/to/markdown.md"
+pnpm exec textlint "path/to/markdown.md"
 
 # markdownlint-cli2の実行
-npx markdownlint-cli2 --fix "path/to/markdown.md"
+pnpm exec markdownlint-cli2 --fix "path/to/markdown.md"
 ```

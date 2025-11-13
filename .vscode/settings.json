@@ -7,8 +7,8 @@
         "articles"
     ],
     "chat.tools.terminal.autoApprove": {
-        "npx textlint": true,
-        "npx markdownlint-cli2 --fix": true
+        "pnpm exec textlint": true,
+        "pnpm exec markdownlint-cli2 --fix": true
     },
     "github.copilot.chat.commitMessageGeneration.instructions": [
         {
