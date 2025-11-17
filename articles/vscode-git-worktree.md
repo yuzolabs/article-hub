@@ -118,7 +118,7 @@ Worktreeを削除したい場合は、ソース管理ビューで対象のworktr
 
 :::message
 VSCode上では他に「Compare with Workspace」と「Migrate Worktree Changes」の機能がありますが、使ったことがないので省略させて頂きます。
-小さい変更を別のworktreeへ移す場合に使うのだと思いますが、これならworktreeをそのまま使い続けて小さいPRに分割したほうが良さそうです。
+小さい変更を別のworktreeへ移す場合に使うのだと思いますが、個人的には、worktreeをそのまま使い続けて小さいPRに分割したほうが良さそうです。
 :::
 
 ## まとめ
