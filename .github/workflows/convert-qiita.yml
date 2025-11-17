@@ -1,4 +1,4 @@
-name: Publish articles
+name: Convert to Qiita articles
 
 on:
   push:
@@ -25,9 +25,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Sync to Qiita
-        uses: C-Naoki/zenn-qiita-sync@0f9b91eb3b90b1b4d6afd094fdb39d9601a82ca7 # v1.0.0
+      - name: Convert to Qiita articles
+        uses: yuzolabs/zenn-qiita-converter@v0.1.0
         with:
-          qiita-token: ${{ secrets.QIITA_TOKEN }}
           convert-commit-message: "🔄 auto: synchronize qiita articles"
-          qiitacli-commit-message: "🔄 auto: update using qiita-cli"
