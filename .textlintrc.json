@@ -81,7 +81,8 @@
         }
       },
       "ja-hiragana-keishikimeishi": true,
-      "ja-no-abusage": true
+      "ja-no-abusage": true,
+      "no-exclamation-question-mark": false
     },
     "@textlint-ja/textlint-rule-preset-ai-writing": true,
     "ja-space-between-half-and-full-width": {
