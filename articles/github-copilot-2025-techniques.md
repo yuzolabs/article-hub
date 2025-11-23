@@ -3,7 +3,7 @@ title: "GitHub Copilot テクニック集 2025年版"
 emoji: "🤖"
 type: "tech"
 topics: ["githubcopilot", "vscode"]
-published: false
+published: true
 published_at: 2025-12-02 07:00
 ---
 
