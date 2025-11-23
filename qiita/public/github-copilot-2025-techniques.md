@@ -1,7 +1,7 @@
 ---
 title: GitHub Copilot テクニック集 2025年版
 published_at: '2025-12-02 07:00'
-private: true
+private: false
 tags:
   - githubcopilot
   - vscode
