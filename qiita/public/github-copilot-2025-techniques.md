@@ -1,6 +1,6 @@
 ---
 title: GitHub Copilot テクニック集 2025年版
-published_at: '2025-12-02 07:00'
+published_at: '2025-12-05 07:00'
 private: false
 tags:
   - githubcopilot
