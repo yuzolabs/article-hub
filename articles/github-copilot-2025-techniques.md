@@ -4,7 +4,7 @@ emoji: "🤖"
 type: "tech"
 topics: ["githubcopilot", "vscode"]
 published: true
-published_at: 2025-12-02 07:00
+published_at: 2025-12-05 07:00
 ---
 
 2025年は AI 関連で大きな進展があった年でした。1月の DeepSeek R1がリリースされたのをきっかけに、GPT-4.1や Gemini 2.5Pro、下期には Sonnet 4.5や GPT-5、Gemini 3 Pro など次々と高度な LLM が登場し、AI アシスタントの性能も飛躍的に向上しました。
