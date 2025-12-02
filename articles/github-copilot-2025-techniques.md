@@ -23,7 +23,7 @@ AI コーディングエージェントにもその影響は大きく、特に M
 この機能の特徴として1回のタスクでの完遂能力が高くなるため、複雑なタスクでもプレミアムリクエストの消費を抑えることができます。
 
 VSCode 以外を使用している場合は、以下のリポジトリのファイルを`.github/agents/beast-mode.agent.md`として保存し、このカスタムエージェントを使用することで同様の効果が得られます。
-モデル名は適時書き換えてください。
+モデル名は適宜書き換えてください。
 
 https://github.com/github/awesome-copilot/blob/86adaa48fe3f8e9e0372cd5b18c52e5bb58f156b/agents/4.1-Beast.agent.md
 
