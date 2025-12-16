@@ -12,7 +12,7 @@ published_at: 2025-12-17 06:30
 仕様は変わる可能性があります。
 :::
 
-12日にリリースされた GPT-5.2 では、Reasoning Effort を `low` / `medium` / `high` / `xhigh` の 4 段階で指定できます。
+2025年12月12日にリリースされた GPT-5.2 では、Reasoning Effort を `low` / `medium` / `high` / `xhigh` の 4 段階で指定できます。
 Reasoning Effort をタスクの難易度によって切り替えることで、簡単なタスクは高速に、複雑なタスクはじっくりと推論させることができます。
 
 Cursor や Codex ではモデル選択画面で `GPT-5.2 Extra High` や `xhigh` を選べますが、VS Code の GitHub Copilot では Reasoning Effort がモデル選択画面に表示されません。
