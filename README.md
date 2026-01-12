@@ -111,15 +111,3 @@ pre-commit install
 ```bash
 pre-commit run --all-files
 ```
-
-## Lintツール
-
-このプロジェクトでは、以下のLintツールを使用しています。
-
-```bash
-# textlintの実行
-pnpm exec textlint "path/to/markdown.md"
-
-# markdownlint-cli2の実行
-pnpm exec markdownlint-cli2 --fix "path/to/markdown.md"
-```
