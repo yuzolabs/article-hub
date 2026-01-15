@@ -5,7 +5,7 @@ tags:
   - opencode
   - 開発効率化
   - CLI
-  - GitHub Copilot
+  - githubcopilot
 updated_at: '2026-01-12T08:48:41.940Z'
 id: null
 organization_url_name: null
@@ -19,9 +19,15 @@ slide: false
 
 :::note alert
 現在、OpenCode でサブスクリプション連携をサポートしているプロバイダについて公式の連携方法ではない手段を用いているものが何個かあります。
-GitHub Copilot、Antigravity などがこれに該当し、使用するとこれらのサービスの利用規約に抵触する可能性があります。
+Antigravity がこれに該当し、使用するとこれらのサービスの利用規約に抵触する可能性があります。
 
 利用する場合は、正式に連携している Codex や Z.ai などのサブスクリプションを使用するか、API キーを用いて連携することを **強く** 推奨します。
+:::
+
+:::note
+2026/01/16追記：
+GitHub Copilot のサブスクリプションが正式に OpenCode でサポートされました！
+v1.1.21以降で利用可能です。
 :::
 
 ## GitHub Copilotの機能との比較
@@ -180,6 +186,9 @@ https://opencode.ai/docs/zen/#privacy
 
 GitHub Copilot の大きなメリットは、様々な LLM モデルを安価に利用できる点ですが、現状の OpenCode ではまだ実現できていません。
 
-公式に GitHub Copilot のサブスクリプション連携をサポートする予定と発表されたため、今後に期待したいです。
+~~公式に GitHub Copilot のサブスクリプション連携をサポートする予定と発表されたため、今後に期待したいです。~~
 
-https://x.com/opencode/status/2009863506963902547
+2026/01/16 追記：
+GitHub Copilot のサブスクリプション連携が正式にサポートされました！
+
+https://x.com/github/status/2011822451613712646
