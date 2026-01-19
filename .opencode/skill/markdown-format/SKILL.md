@@ -5,18 +5,18 @@ description: markdownlint-cli2とtextlintを繰り返し実行して、Markdown�
 
 ## 役割
 
-このスキルは、リポジトリ内のMarkdownファイルを対象に、構文エラーの修正と日本語スタイルの校正を自動的に行います。
+このスキルは、リポジトリ内の Markdown ファイルを対象に、構文エラーの修正と日本語スタイルの校正を自動的に行います。
 
 ## 使用タイミング
 
-- Markdownファイルを新規作成したとき
-- 既存のMarkdownファイルを編集したとき
-- Markdownファイルのフォーマットやリンターの実行を求められたとき
+- Markdown ファイルを新規作成したとき
+- 既存の Markdown ファイルを編集したとき
+- Markdown ファイルのフォーマットやリンターの実行を求められたとき
 
 ## 実行手順
 
-1. 対象となるMarkdownファイルを特定します。
-2. 以下のコマンドを実行して、Markdownの構文エラーを自動修正します。
+1. 対象となる Markdown ファイルを特定します。
+2. 以下のコマンドを実行して、Markdown の構文エラーを自動修正します。
 
    ```bash
    bunx markdownlint-cli2 --fix <path/to/file.md>

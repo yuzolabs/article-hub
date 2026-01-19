@@ -1,3 +1,4 @@
 node_modules
 .zenn/
 qiita/.local/
+.venv

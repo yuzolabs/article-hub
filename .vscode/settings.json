@@ -7,8 +7,8 @@
         "articles"
     ],
     "chat.tools.terminal.autoApprove": {
-        "pnpm exec textlint": true,
-        "pnpm exec markdownlint-cli2 --fix": true,
+        "bunx textlint": true,
+        "bunx markdownlint-cli2": true,
         "cd": true,
         "fd": true,
         "rg": true,
