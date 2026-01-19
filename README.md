@@ -1,16 +1,16 @@
 # article_hub
 
-Qiita/Zennの記事を保存し、自動で投稿するリポジトリです。
+Qiita/Zenn の記事を保存し、自動で投稿するリポジトリです。
 
 ## 自動投稿機能
 
-このリポジトリは、Zenn/Qiitaへの記事の自動投稿機能を備えています。
+このリポジトリは、Zenn/Qiita への記事の自動投稿機能を備えています。
 
 ### セットアップ
 
 #### 1. QiitaアクセストークンをGitHub Secretsに設定
 
-1. Qiitaのアクセストークンを取得します。
+1. Qiita のアクセストークンを取得します。
 2. リポジトリの `Settings` → `Secrets and variables` → `Actions` にアクセスします。
 3. `New repository secret` をクリックします。
 4. Name: `QIITA_TOKEN`、Secret: コピーしたトークンを入力します。
@@ -26,10 +26,10 @@ Qiita/Zennの記事を保存し、自動で投稿するリポジトリです。
 
 #### 新しい記事を作成する
 
-記事はZenn形式で記述します。事前にpnpmをインストールしてください。
+記事は Zenn 形式で記述します。事前に bun をインストールしてください。
 
 ```bash
-pnpm exec zenn new:article --slug 記事のスラッグ --title タイトル --type tech --emoji ✨
+bun zenn new:article --slug 記事のスラッグ --title タイトル --type tech --emoji ✨
 ```
 
 オプション：
@@ -42,7 +42,7 @@ pnpm exec zenn new:article --slug 記事のスラッグ --title タイトル --t
 #### 記事をプレビューする
 
 ```bash
-pnpm exec zenn preview
+bun zenn preview
 ```
 
 [http://localhost:8000](http://localhost:8000) でプレビューを確認できます。
@@ -51,10 +51,10 @@ pnpm exec zenn preview
 
 1. `articles/` ディレクトリ内に記事を作成します。
 2. フロントマターで `published: true` を設定します。
-3. PRを作成し、`main` ブランチにマージします。
-4. mainブランチにマージすると、以下の処理が自動的に実行されます。
-   - ZennにはGitHub App経由で記事が公開されます。
-   - GitHub ActionsがQiita形式に変換し、Qiitaにも投稿します。
+3. PR を作成し、`main` ブランチにマージします。
+4. main ブランチにマージすると、以下の処理が自動的に実行されます。
+   - Zenn には GitHub App 経由で記事が公開されます。
+   - GitHub Actions が Qiita 形式に変換し、Qiita にも投稿します。
 
 ### ディレクトリ構造
 
@@ -71,18 +71,18 @@ pnpm exec zenn preview
 
 ### 必要な環境
 
-- Node.js 18.0.0以上
-- Python 3.x（pre-commit用）
+- Bun 1.x
+- Python 3.x（pre-commit 用）
 
 ### pre-commitの導入
 
 このプロジェクトでは、コミット前に自動でコードの品質をチェックする仕組みとして[pre-commit](https://pre-commit.com/)を導入しています。
 
-markdownlint, textlintについては自動修正が困難になる可能性があるので、GitHub Actionsで検知することを予定しています。
+markdownlint, textlint については自動修正が困難になる可能性があるので、GitHub Actions で検知することを予定しています。
 
 #### 初回セットアップ
 
-pre-commitをインストールし、リポジトリに設定します。
+pre-commit をインストールし、リポジトリに設定します。
 
 ```bash
 # pre-commitのインストール(pipを使用)
@@ -96,13 +96,13 @@ pre-commit install
 
 コミット時には以下のチェックが自動で行われます。
 
-- `check-yaml` - YAMLファイルの構文チェック
+- `check-yaml` - YAML ファイルの構文チェック
 - `end-of-file-fixer` - ファイル末尾に改行を追加
 - `trailing-whitespace` - 行末の不要な空白を削除
-- `check-json` - JSONファイルの構文チェック
-- `check-toml` - TOMLファイルの構文チェック
+- `check-json` - JSON ファイルの構文チェック
+- `check-toml` - TOML ファイルの構文チェック
 - `detect-private-key` - 秘密鍵の誤コミットを防止
-- `no-commit-to-branch` - mainブランチへの直接コミットを防止
+- `no-commit-to-branch` - main ブランチへの直接コミットを防止
 
 #### 手動でチェックを実行する
 
@@ -110,4 +110,16 @@ pre-commit install
 
 ```bash
 pre-commit run --all-files
+```
+
+## Lintツール
+
+このプロジェクトでは、以下の Lint ツールを使用しています。
+
+```bash
+# textlintの実行
+bun textlint "path/to/markdown.md"
+
+# markdownlint-cli2の実行
+bun markdownlint-cli2 --fix "path/to/markdown.md"
 ```

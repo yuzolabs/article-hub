@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Install Dependencies",
+      "type": "shell",
+      "command": "if [ -f bun.lock ] || [ -f bun.lockb ]; then bun install --frozen-lockfile; else bun install; fi",
+      "windows": {
+        "command": "if (Test-Path bun.lock -or Test-Path bun.lockb) { bun install --frozen-lockfile } else { bun install }"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Setup UV Environment",
+      "type": "shell",
+      "command": "uv sync",
+      "problemMatcher": []
+    },
+    {
+      "label": "Setup Pre-commit",
+      "type": "shell",
+      "command": "if [ ! -f .git/hooks/pre-commit ]; then uv run --active pre-commit install; else echo 'pre-commit hook already installed'; fi",
+      "windows": {
+        "command": "if (-not (Test-Path .git/hooks/pre-commit)) { uv run --active pre-commit install } else { echo 'pre-commit hook already installed' }"
+      },
+      "problemMatcher": [],
+      "dependsOn": [
+        "Setup UV Environment"
+      ]
+    },
+    {
+      "label": "Install & Setup",
+      "dependsOn": [
+        "Install Dependencies",
+        "Setup Pre-commit"
+      ],
+      "dependsOrder": "sequence",
+      "problemMatcher": [],
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    }
+  ]
+}
