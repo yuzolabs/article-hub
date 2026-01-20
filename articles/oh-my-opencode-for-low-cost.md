@@ -170,7 +170,7 @@ GitHub Copilot のみを使用する場合、Opus 4.5をメインセッション
 
 メインセッションはユーザーが追加でプロンプトを入力するまで追加のプレミアムリクエストを消費しません。そのため、Opus 4.5を使用しても消費を抑えることができます。
 
-:::details 設定内容。
+:::details 設定内容
 
 ```json:oh-my-opencode.jsonc
 {
@@ -260,7 +260,7 @@ GitHub Copilot の Pro プランを想定しているので、メインセッシ
 
 `modelConcurrency`については、GLM Coding plan のプランによって並列実行数が変化するので、適宜調整してください。
 
-:::details 設定内容。
+:::details 設定内容
 
 ```json:oh-my-opencode.jsonc
 {
@@ -352,7 +352,7 @@ GLM Coding plan のみを使用する場合、メインセッションに GLM-4.
 もし Lite プランを使用している場合は、全て GLM-4.7を使用するとカスタムエージェントの同時実行数制限に引っかかる恐れがあります。
 その場合は、GLM-4.6などの別モデルを併用することを考える必要があります。
 
-:::details 設定内容。
+:::details 設定内容
 
 ```json:oh-my-opencode.jsonc
 {
